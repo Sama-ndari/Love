@@ -46,10 +46,40 @@
             position: absolute;
             left: 0;
             top: 0;
+            font-size: 4vw; /* Relative font size based on viewport width */
+            padding: 1rem 2rem;
+        }
+
+        #yes-button {
+                font-size: 4vw; /* Adjust the font size for smaller screens */
+                padding: 1rem 2rem; /* Adjust the padding for smaller screens */
+            }
+
+        h1 {
+            font-size: 6vw; /* Relative font size based on viewport width */
+            margin-top: 5vh; /* Relative margin based on viewport height */
+        }
+
+        @media (max-width: 576px) {
+            /* Styles for screens smaller than or equal to 576px */
+            #no-button {
+                font-size: 9vw; /* Adjust the font size for smaller screens */
+                padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
+            }
+
+            #yes-button {
+                font-size: 9vw; /* Adjust the font size for smaller screens */
+                padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 12vw; /* Adjust the font size for smaller screens */
+                margin-top: 10vh; /* Adjust the margin for smaller screens */
+            }
         }
     </style>
 </head>
-<body>
+<body class="vh-100">
     <div class="container">
         <h1 class="mt-5">Do you love me?</h1>
         <div class="mt-3">
